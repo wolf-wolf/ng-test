@@ -1,18 +1,14 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {ManageComponent} from './modules/manage/pages/manage/manage.component';
-import {LoginComponent} from './modules/login/pages/login/login.component';
-import {SystemManageComponent} from './modules/manage/pages/system-manage/system-manage.component';
-
 
 const routes: Routes = [
-    {path: 'login', component: LoginComponent},
     {
-        path: 'manage', component: ManageComponent,
-        children: [{
-            path: 'system',
-            component: SystemManageComponent
-        }]
+        path: '',
+        loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
+    },
+    {
+        path: 'manage',
+        loadChildren: () => import('./modules/manage/manage.module').then(m => m.ManageModule)
     },
 ];
 

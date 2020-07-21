@@ -9,7 +9,19 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
-import {ManageRoutingModule} from './manage-routing.module';
+import {RouterModule, Routes} from '@angular/router';
+
+const routes: Routes = [
+    {
+        path: '', component: ManageComponent,
+        children: [
+            {
+                path: 'system', // child route path
+                component: SystemManageComponent // child route component that the router renders
+            },
+        ]
+    },
+];
 
 @NgModule({
     declarations: [
@@ -25,7 +37,7 @@ import {ManageRoutingModule} from './manage-routing.module';
         MatPaginatorModule,
         MatSidenavModule,
         MatListModule,
-        ManageRoutingModule
+        RouterModule.forChild(routes)
     ]
 })
 export class ManageModule {
