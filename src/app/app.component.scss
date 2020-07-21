@@ -31,6 +31,8 @@ p {
     background-color: #1976d2;
     color: white;
     font-weight: 600;
+    padding-left: 30px;
+    box-sizing: border-box;
 }
 
 .toolbar img {
@@ -52,6 +54,8 @@ p {
     flex-direction: column;
     align-items: center;
     height: calc(100% - 60px);
+    background: url("../assets/images/sub_entry_img.png") no-repeat center;
+    background-size: 100% 100%;
 }
 
 svg.material-icons {
