@@ -1,0 +1,12 @@
+.manage {
+    position: relative;
+
+    .toggle-btn {
+        position: absolute;
+        right: -20px;
+        top: 20px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+}

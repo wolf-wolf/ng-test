@@ -1,0 +1,13 @@
+.system-manage {
+    height: 100%;
+    .system-table {
+        height: calc(100% - 120px);
+        overflow-y: scroll;
+
+        .mat-header-cell, .mat-footer-cell, .mat-cell {
+            min-width: 80px;
+            box-sizing: border-box;
+        }
+    }
+}
+
