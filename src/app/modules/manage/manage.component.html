@@ -1,0 +1,11 @@
+<mat-sidenav-container class="main-content manage">
+  <mat-sidenav mode="side" [opened]="true">
+    <mat-selection-list [multiple]="false">
+      <mat-list-option [routerLink]="['system']" routerLinkActive="menu-active">系统接入</mat-list-option>
+      <mat-list-option>权限管理</mat-list-option>
+    </mat-selection-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
