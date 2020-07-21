@@ -1,0 +1,10 @@
+$headerHeight: 60;
+$footerHeight: 60;
+.main-content {
+    width: 100vw;
+    height: calc(100vh - #{$headerHeight+$footerHeight}px);
+}
+
+.spacer {
+    flex: 1 1 auto;
+}

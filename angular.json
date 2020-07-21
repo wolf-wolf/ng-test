@@ -28,8 +28,9 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-                            "src/styles.scss"
+                            "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+                            "src/assets/style/layout.scss",
+                            "src/assets/style/reset.css"
                         ],
                         "scripts": []
                     },
@@ -94,7 +95,7 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+                            "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
                             "src/styles.scss"
                         ],
                         "scripts": []
